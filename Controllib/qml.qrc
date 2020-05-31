@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>../lib/theme/CLan.qml</file>
+        <file>../lib/theme/CSkinColor.qml</file>
+        <file>../lib/theme/CSkinImage.qml</file>
+    </qresource>
+</RCC>

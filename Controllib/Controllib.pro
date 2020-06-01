@@ -30,4 +30,15 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
 DISTFILES += \
-    ../lib/theme/qmldir
+    lib/base/colorControl/CButton.qml \
+    lib/base/colorControl/CComboBox.qml \
+    lib/base/colorControl/CImageButton.qml \
+    lib/base/colorControl/CText.qml \
+    lib/base/colorControl/CTextEdit.qml \
+    lib/base/colorControl/CWindows.qml \
+    lib/common/CGrayButton.qml \
+    lib/common/CGreenButton.qml \
+    lib/theme/CLan.qml \
+    lib/theme/CSkinColor.qml \
+    lib/theme/CSkinImage.qml \
+    lib/theme/CThemeSet.qml

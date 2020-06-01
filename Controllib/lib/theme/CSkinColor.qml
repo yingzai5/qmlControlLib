@@ -49,12 +49,12 @@ QtObject {
     property string  btn_red_disable_color : "#000000"//红色按钮不能用状态的边框（也可能是内部也是）颜色
 
     //txt 文字颜色
-    property string  txt_normal_color     : "#FFFFFF" //正常状态文字统一的颜色
-    property string  txt_green_color      : "#34EB7C" //绿色文字正常颜色
-    property string  txt_green_hovercolor : "#38FF88" //绿色文字移动上去的颜色
-    property string  txt_gray_color       : "#C0C0C0" //灰色文字正常颜色
-    property string  txt_gray_hover_color : "#1EBD5D" //灰色文字移动上去的颜色
-    property string  txt_black            : "#1B1F24"
+    property string  txt_normal_color      : "#FFFFFF" //正常状态文字统一的颜色
+    property string  txt_green_color       : "#34EB7C" //绿色文字正常颜色
+    property string  txt_green_hovercolor  : "#38FF88" //绿色文字移动上去的颜色
+    property string  txt_gray_color        : "#C0C0C0" //灰色文字正常颜色
+    property string  txt_gray_hover_color  : "#1EBD5D" //灰色文字移动上去的颜色
+    property string  txt_black             : "#1B1F24" //黑色文字
 
     //input
     property string  input_bgcolor         : "#13161a" //输入框的背景颜色
@@ -63,6 +63,12 @@ QtObject {
     property string  input_select_bgcolor  : "#0076d6" //输入框的文字选中的背景颜色
     property string  input_txt_color       : "#ffffff" //输入框的正常文字颜色
 
+    //pop
+    property string  cb_pop_bgcolor        : "#171A1F"
+    property string  cb_pop_select_bgcolor : "#2F3740"
+    property string  cb_pop_bordercolor    : "#2D343C"
+    property string  cb_pop_linecolor      : "#2D333C" //现在没有暂时未透明
+
     //Combox
     property string  combox_bgcolor         : "#171a1f" //下拉框的背景颜色
     property string  combox_border_color    : "#2d343c" //下拉框的边框颜色
@@ -70,8 +76,18 @@ QtObject {
     property string  combox_select_bgcolor  : "#2f3740" //下来框选中的背景颜色
     property string  combox_txt_color       : "#ffffff" //下拉框字体的颜色
 
+    //listview head
+    property string  lv_header_bgcolor      : "#0F1214"
+    property string  lv_header_bdColor      : "transparent"// listview header边框颜色 暂时没有这个颜色
+    property string  lv_header_item_normal_bgcolor : "#1B1F24"  //header item 背景颜色
+    property string  lv_header_item_hover_bgcolor  : "#2F3740"  //header item 移动上去的颜色
+
     //menu
-    property string  menu_gray_hovecolor : "#22282e"
+    property string  menu_gray_hovecolor  : "#22282e"
+    property string  menu_bgcolor         : "#0f1214" //菜单背景颜色
+    property string  menu_bgcolor_hover   : "#2f3740"
+    property string  menu_border_color    : "#2D343C"
+    property string  menu_Separator_color : "#2d333c"
 
 
     onSkinNameChanged: {

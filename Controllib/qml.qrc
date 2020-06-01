@@ -4,5 +4,6 @@
         <file>../lib/theme/CLan.qml</file>
         <file>../lib/theme/CSkinColor.qml</file>
         <file>../lib/theme/CSkinImage.qml</file>
+        <file>../lib/theme/qmldir</file>
     </qresource>
 </RCC>

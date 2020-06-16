@@ -1,0 +1,17 @@
+import QtQuick 2.0
+import QtQuick.Controls 2.12
+import "../skin/CSkin.js" as CSkin
+
+Text {
+   color: CSkin.txt_normal_color
+   font.pixelSize     : CSkin.font_normalSize
+   font.family        : CSkin.font_family
+   font.weight        : CSkin.font_weight
+   font.letterSpacing : CSkin.font_letterspac
+}
+
+/*##^##
+Designer {
+    D{i:0;autoSize:true;height:20;width:200}
+}
+##^##*/

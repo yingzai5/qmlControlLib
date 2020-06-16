@@ -1,9 +1,20 @@
 <RCC>
     <qresource prefix="/">
         <file>main.qml</file>
-        <file>../lib/theme/CLan.qml</file>
-        <file>../lib/theme/CSkinColor.qml</file>
-        <file>../lib/theme/CSkinImage.qml</file>
-        <file>../lib/theme/qmldir</file>
+        <file>lib/base/colorControl/CButton.qml</file>
+        <file>lib/base/colorControl/CComboBox.qml</file>
+        <file>lib/base/colorControl/CImageButton.qml</file>
+        <file>lib/base/colorControl/CText.qml</file>
+        <file>lib/base/colorControl/CTextEdit.qml</file>
+        <file>lib/base/colorControl/CWindows.qml</file>
+        <file>lib/base/ReadMe.md</file>
+        <file>lib/common/CGrayButton.qml</file>
+        <file>lib/common/CGreenButton.qml</file>
+        <file>lib/theme/CLan.qml</file>
+        <file>lib/theme/CSkinColor.qml</file>
+        <file>lib/theme/CSkinImage.qml</file>
+        <file>lib/theme/CThemeSet.qml</file>
+        <file>lib/theme/qmldir</file>
+        <file>lib/base/colorControl/CRoundRect.qml</file>
     </qresource>
 </RCC>

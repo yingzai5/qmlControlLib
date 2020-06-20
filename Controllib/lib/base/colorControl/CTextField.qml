@@ -7,7 +7,7 @@
 import QtQuick 2.0
 import QtQuick.Controls 2.12
 import QtQuick.Templates 2.12 as T
-import "../skin/CSkin.js" as CSkin
+import "../../theme"
 
 T.TextField {
    property alias radius: bg.radius
@@ -27,9 +27,9 @@ T.TextField {
    placeholderTextColor: CSkin.input_phTextColor
    selectedTextColor: CSkin.input_select_txtcolor
    selectionColor: CSkin.input_select_bgcolor
-   font.pixelSize     : CSkin.font_normalSize
-   font.family        : CSkin.font_family
-   font.weight        : CSkin.font_weight
-   font.letterSpacing : CSkin.font_letterspac
+   font.pixelSize     : CThemeSet.font_normalSize
+   font.family        : CThemeSet.font_family
+   font.weight        : CThemeSet.font_weight
+   font.letterSpacing : CThemeSet.font_letterspac
 
 }

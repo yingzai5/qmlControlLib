@@ -7,21 +7,14 @@
 import QtQuick.Controls 2.5
 import QtQuick 2.12
 import QtQuick.Templates 2.12 as T
-import QtQuick.Controls 2.12
-import "../skin/CSkin.js" as CSkin
+import "../../theme"
 
-T.RadioButton {
+T.CheckBox {
     id:root
-    width: 117
+    width: 100
     height: 20
-    background: Rectangle{
-      anchors.fill: root
-      color: root.hovered ? CSkin.cb_pop_select_bgcolor : CSkin.cb_pop_bgcolor
-    }
     indicator: Image {
         id:img
-        anchors.left: parent.left
-        anchors.leftMargin: 12
         anchors.verticalCenter: root.verticalCenter
         fillMode: Image.Tile
         source: checked ? "qrc:///res/selected.png" : "qrc:///res/no_selected.png"
@@ -34,9 +27,11 @@ T.RadioButton {
         verticalAlignment: Text.AlignVCenter
         anchors.left: img.right
         anchors.leftMargin: 10
-        font.pixelSize     : CSkin.font_normalSize
-        font.family        : CSkin.font_family
-        font.weight        : CSkin.font_weight
-        font.letterSpacing : CSkin.font_letterspac
+        font.pixelSize     : CThemeSet.font_normalSize
+        font.family        : CThemeSet.font_family
+        font.weight        : CThemeSet.font_weight
+        font.letterSpacing : CThemeSet.font_letterspac
+        elide: Text.ElideRight
     }
 }
+

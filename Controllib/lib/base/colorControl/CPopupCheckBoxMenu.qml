@@ -12,9 +12,7 @@
 import QtQuick 2.0
 import QtQuick.Window 2.12
 import QtQuick.Controls 2.12
-import "../skin/CSkin.js" as CSkin
-import "../component"
-import "../basiccontrol"
+import "../../theme"
 
 Popup{
     property alias sourcemodel: lv_check.model

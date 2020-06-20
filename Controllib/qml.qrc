@@ -6,8 +6,6 @@
         <file>lib/base/colorControl/CImageButton.qml</file>
         <file>lib/base/colorControl/CText.qml</file>
         <file>lib/base/colorControl/CTextEdit.qml</file>
-        <file>lib/base/colorControl/CWindows.qml</file>
-        <file>lib/base/ReadMe.md</file>
         <file>lib/common/CGrayButton.qml</file>
         <file>lib/common/CGreenButton.qml</file>
         <file>lib/theme/CLan.qml</file>
@@ -16,5 +14,15 @@
         <file>lib/theme/CThemeSet.qml</file>
         <file>lib/theme/qmldir</file>
         <file>lib/base/colorControl/CRoundRect.qml</file>
+        <file>lib/base/colorControl/CBlackLine.qml</file>
+        <file>lib/base/colorControl/CCheckBox.qml</file>
+        <file>lib/base/colorControl/CDialog.qml</file>
+        <file>lib/base/colorControl/CImageStatusButton.qml</file>
+        <file>lib/base/colorControl/CPopup.qml</file>
+        <file>lib/base/colorControl/CPopupCheckBoxMenu.qml</file>
+        <file>lib/base/colorControl/CRadioButton.qml</file>
+        <file>lib/base/colorControl/CTextCombox.qml</file>
+        <file>lib/base/colorControl/CTextField.qml</file>
+        <file>lib/base/colorControl/CWindow.qml</file>
     </qresource>
 </RCC>

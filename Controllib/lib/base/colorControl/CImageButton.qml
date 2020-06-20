@@ -1,11 +1,8 @@
 import QtQuick 2.12
-/*-------------------------------
-  * Author:Teacher zeng
-  * Date  : 2020.05
-  * Unit description: imagebutton
-  */
 import QtQuick.Controls 2.12
 import QtQuick.Controls.Styles 1.4
+import "../../theme"
+
 Image {
     id: root
     //image
@@ -23,6 +20,10 @@ Image {
     property alias text: t.text
     property alias containsMouse: area.containsMouse
     property alias containsPress: area.containsPress
+    property string tipstr: ""
+
+    signal clicked
+
 
     width  : sourceSize.width
     height : sourceSize.height
@@ -35,8 +36,12 @@ Image {
         id: t
         color: enabled ? (containsMouse ?(containsPress ? txt_press_color : txt_hover_color )
                                          :txt_normal_color ) : txt_disable_color
-        anchors.centerIn: parent
     }
+
+    ToolTip.text: tipstr
+    ToolTip.delay: 300
+    ToolTip.visible:area.containsMouse && (tipstr !=="")
+
     MouseArea{
         id: area
         anchors.fill: parent;

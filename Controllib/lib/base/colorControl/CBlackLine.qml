@@ -4,7 +4,7 @@
   *functional description: 分割线
   */
 import QtQuick 2.0
-import "../skin/CSkin.js" as CSkin
+import "../../theme"
 
 Rectangle{
     property bool ishorizontal : false //是否是水平的

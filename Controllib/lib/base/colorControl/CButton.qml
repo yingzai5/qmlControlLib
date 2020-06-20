@@ -1,68 +1,43 @@
-/*-------------------------------
-  * Author:Teacher zeng
-  * Date  : 2020.05
-  * Unit description: 用Rectangle自定义button控件
-  */
 import QtQuick 2.12
 import QtQuick.Controls 2.12
-import "../skin/CSkin.js" as CSkin
-import QtQuick.Templates 2.12 as T
+import "../../theme"
 
-T.Button{
-    id: root
-    property alias txt:t.text
-    property alias border: bg.border
-    property alias color : bg.color
-    property string txtcolor: ""
-    property string txthovercolor : ""
+Rectangle {
+    id:root
+    property alias text: txt.text
+    property alias textsize:txt.font.pixelSize
+    property string txtcolor: CSkin.txt_normal_color
+    property string txthovercolor : CSkin.txt_hover_color
+    property string bgnormalcolor: "transparent"
+    property string bghovercolor : "transparent"
+    property string bgpresscolor : "transparent"
+    property string bgdisablecolor : "transparent"
     property alias containsMouse: area.containsMouse
     property alias containsPress: area.containsPress
-    CText {
-       id:t
-       anchors.centerIn: parent
-       color: containsMouse ? txthovercolor : txtcolor
+    width: 80
+    height: 20
+    signal clicked
+    radius: 5
+    color:{
+        if(!enabled)
+            bgdisablecolor
+        else if(containsPress)
+            bgpresscolor
+        else
+            containsMouse ? bghovercolor : bgnormalcolor
     }
 
-    background: Rectangle{
-        id:bg
-        anchors.fill: root
-        radius: 5
-        color: "transparent"
+    CText{
+        id:txt
+        color: containsMouse ? txthovercolor : txtcolor
+        anchors.centerIn: parent
     }
+
     MouseArea {
         id: area
         anchors.fill: parent;
-        hoverEnabled: parent.enabled; //增加了这个效果才能使得area.containsMouse有效果
+        hoverEnabled: parent.enabled;
         onClicked: root.clicked();
         cursorShape: Qt.PointingHandCursor
     }
-
 }
-//Rectangle {
-//    id:root
-//    property alias text: txt.text
-//    property string txtcolor: ""
-//    property string txthovercolor : ""
-//    property alias containsMouse: area.containsMouse
-//    property alias containsPress: area.containsPress
-
-//    signal clicked
-//    radius: 5
-//    color: "transparent"
-//    Text{
-//        id:txt
-//        color: containsMouse ? txthovercolor : txtcolor
-//        font.pixelSize : CSkin.font_normalSize
-//        font.family    : CSkin.font_family
-//        font.weight    : CSkin.font_weight
-//        anchors.centerIn: parent
-//    }
-
-//    MouseArea {
-//        id: area
-//        anchors.fill: parent;
-//        hoverEnabled: parent.enabled;
-//        onClicked: root.clicked();
-//        cursorShape: Qt.PointingHandCursor
-//    }
-//}

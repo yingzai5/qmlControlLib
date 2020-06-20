@@ -1,7 +1,7 @@
 import QtQuick 2.0
 import QtQuick.Controls 2.12
 import QtQuick.Window 2.12
-import "../skin/CSkin.js" as CSkin
+import "../../theme"
 
 Window{
     id: root
@@ -19,7 +19,7 @@ Window{
         id: id_main
         anchors.fill: parent
         border.color: CSkin.main_border_color
-        border.width: CSkin.window_border_width
+        border.width: CThemeSet.window_border_width
         color: CSkin.main_bgcolor
 
         //top
@@ -28,8 +28,8 @@ Window{
             anchors.top: parent.top
             anchors.left: parent.left
             anchors.right: parent.right
-            anchors.margins: CSkin.window_border_width
-            height: CSkin.window_top_height
+            anchors.margins: CThemeSet.window_border_width
+            height: CThemeSet.window_top_height
             color: CSkin.main_top_bgcolor
 
             CText {

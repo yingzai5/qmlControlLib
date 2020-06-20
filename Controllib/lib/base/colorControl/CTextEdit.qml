@@ -5,7 +5,7 @@
 import QtQuick 2.0
 import QtQuick.Controls 2.12
 import QtQuick.Layouts 1.12
-import "../skin/CSkin.js" as CSkin
+import "../../theme"
 
 Rectangle {
     id: root
@@ -21,9 +21,9 @@ Rectangle {
         anchors.fill: parent
         anchors.margins: margins
         clip: true
-        font.pixelSize : CSkin.font_normalSize
-        font.family    : CSkin.font_family
-        font.weight    : CSkin.font_weight
+        font.pixelSize : CThemeSet.font_normalSize
+        font.family    : CThemeSet.font_family
+        font.weight    : CThemeSet.font_weight
         selectByMouse : true //表示可以选中
         selectedTextColor: CSkin.input_select_txtcolor
         selectionColor: CSkin.input_select_bgcolor

@@ -1,10 +1,10 @@
 import QtQuick 2.0
 import QtQuick.Controls 2.12
 //import QtQuick.Window 2.12
-//import QtQuick.Templates 2.12 as C
-import "../skin/CSkin.js" as CSkin
+import QtQuick.Templates 2.12 as T
+import "../../theme"
 
-Dialog {
+T.Dialog {
 	id: root
 	property alias headtext: t.text
 
@@ -32,8 +32,8 @@ Dialog {
 			anchors.top: parent.top
 			anchors.left: parent.left
 			anchors.right: parent.right
-			anchors.margins: CSkin.window_border_width
-			height: CSkin.window_top_height
+            anchors.margins: CThemeSet.window_border_width
+            height: CThemeSet.window_top_height
 			color: CSkin.main_top_bgcolor
 
 			CText {

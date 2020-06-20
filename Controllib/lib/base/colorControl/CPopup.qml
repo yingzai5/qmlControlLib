@@ -7,7 +7,7 @@
 import QtQuick 2.0
 import QtQuick.Controls 2.12
 import QtQuick.Templates 2.12 as T
-import "../skin/CSkin.js" as CSkin
+import "../../theme"
 
 T.Popup {
     topPadding: 0

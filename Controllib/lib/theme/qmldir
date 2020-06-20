@@ -1,0 +1,4 @@
+module theme
+singleton CSkin 1.0 CSkinColor.qml
+singleton CThemeSet 1.0 CThemeSet.qml
+

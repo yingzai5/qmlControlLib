@@ -1,6 +1,12 @@
+/*-------------------------------
+  * Author:Teacher zeng
+  * Date  : 2020.06
+  * Unit description: 此单元可以单独的设置矩形的某一个角为圆角的
+  */
 import QtQuick 2.12
 import QtQuick.Controls 2.5
 import QtQuick.Shapes 1.12
+import "../../theme"
 
 Shape {
     id: root
